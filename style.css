@@ -1,44 +1,39 @@
-body{
+body {
+    font-family: 'Roboto', sans-serif;
     margin: 0;
-    padding: 0;
+}
+.top-container {
+    margin-left: 30px;
+    font-weight: 700;
+    font-size: 30px;
+    margin-top: 10px;
+    display: flex;
+}
+.top-container{
+    margin-top: 15px;
+}
+.top-container-left {
+    display: flex;
+    align-items: center; /* Aligns icon and text vertically */;
+}
+.top-container-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+.top-container-center input{
+    width: 400px;
+    height: 40px;
+    border: 0;
+    background-color: transparent;
+}
+.top-container-center form{
+    background-color: #f5f5f5;
+    display: flex;
+    
 }
 a{
     text-decoration: none;
-}
-.header-container{
-    background-color: rgb(35, 43, 150);
-    height: 50px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.search-container {
-    display: flex;
-    align-items: center;
-}
-
-.search-bar{
-    width: 300px;
-    border: 3px solid black;
-    border-radius: 7px;
-   
-}
-.submit-button{
-    background: none;
-    border: none;
-    cursor: pointer;
-}
-
-.submit-button .material-symbols-outlined {
-    font-size: 30px;
-}
-.side-container{
-    position: absolute; /* Absolute positioning */
-    right: 20px; /* Adjust as needed */
-}
-.side-container a{
-    color: white;
-    font-size: 20px;
+    color: black;
 }
