@@ -1,0 +1,44 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+.header-container{
+    background-color: rgb(35, 43, 150);
+    height: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar{
+    width: 300px;
+    border: 3px solid black;
+    border-radius: 7px;
+   
+}
+.submit-button{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.submit-button .material-symbols-outlined {
+    font-size: 30px;
+}
+.side-container{
+    position: absolute; /* Absolute positioning */
+    right: 20px; /* Adjust as needed */
+}
+.side-container a{
+    color: white;
+    font-size: 20px;
+}
