@@ -62,7 +62,12 @@ body {
     background-color: #333;
     transform: translateX(100%);
     transition: transform 0.3s ease;
+
+    display: block;
+    text-align: center;
+    color: white;
 }
+
 .sidebar button{
     position: fixed;
     top: 20px;
@@ -86,18 +91,28 @@ body {
 }
 
 
-
-
-
-
 .sidebar.active{
     transform: translateX(0); /* Moves the sidebar into view */
 }
 .sidebar-button{
     transform: translateX(0);
 }
+.sidebar-content li{
+    margin-top: 20px;
+    border: 3px solid black;
+    font-size: 30px;
+}
+
 
 a{
     text-decoration: none;
     color: black;
+}
+li{
+    list-style-type: none;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
