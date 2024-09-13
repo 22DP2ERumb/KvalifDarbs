@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
     <header>
@@ -24,17 +25,34 @@
 
             <div class="top-container-center">
                 <form action="">
-                    <input type="text" placeholder="Meklēt auto">
-                    <button type="submit"></button>
+                    <input type="text" placeholder="Search">
+                    <button type="submit"><span class="material-symbols-outlined">search</span></button>
                 </form>
             </div>
 
-            <div class="top-container-right">
-            </div>
+            
 
         </div>
-
     </header>
+    <div class = "sidebar" id="sidebar">
+        <Button class="sidebar-button" id="menuButton"><span class="material-symbols-outlined">menu</span></Button>
+        <h1>MENU</h1>
+        <ul>
+            <li><a href="">Login</a></li>
+            <li><a href="">Text1</a></li>
+            <li><a href="">Text2</a></li>
+        </ul>
+
+    </div>
+    <script>
+        const menuButton = document.getElementById('menuButton');
+        const sidebar = document.getElementById('sidebar');
+
+        menuButton.addEventListener('click', function () {
+            sidebar.classList.toggle('active');
+        });
+    </script>
+    
     
 </body>
 </html>

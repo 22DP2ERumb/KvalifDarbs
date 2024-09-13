@@ -27,12 +27,76 @@ body {
     height: 40px;
     border: 0;
     background-color: transparent;
+    outline: none;
+    
+}
+.top-container-center button{
+    background-color: transparent;
+    border: 0;
+    transition: background-color 0.3s ease;
+    padding-right: 5px;
+    cursor: pointer;
+}
+.top-container-center button:hover{
+    background-color: #e0e0e0;
+    color: rgb(45, 45, 211);
 }
 .top-container-center form{
     background-color: #f5f5f5;
     display: flex;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+}
+.top-container-center form:focus-within{
+    box-shadow: 0 0 0 2px rgb(0, 0, 0);
+}
+
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0; /* Aligns the sidebar to the right edge of the screen */
+    width: 250px;
+    height: 100%;
+    background-color: #333;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+}
+.sidebar button{
+    position: fixed;
+    top: 20px;
+    right: 260px;
+    cursor: pointer;
+    transition: right 0.3s ease;
+
+    background-color: transparent;
+    border-radius: 10px;
+    border: none;
+    transition: background-color 0.3s ease;
+    transition: box-shadow 0.3s ease;
     
 }
+
+
+.sidebar button:hover{
+    background-color: #e0e0e0;
+    box-shadow: 0 0 0 2px rgb(0, 0, 0);
+    color: rgb(45, 45, 211);
+}
+
+
+
+
+
+
+.sidebar.active{
+    transform: translateX(0); /* Moves the sidebar into view */
+}
+.sidebar-button{
+    transform: translateX(0);
+}
+
 a{
     text-decoration: none;
     color: black;

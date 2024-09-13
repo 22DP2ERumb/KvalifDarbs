@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Sidebar</title>
+    <link rel="stylesheet" href="testing.css">
+</head>
+<body>
+    <button id="menuButton">Menu</button>
+
+    <div class="sidebar" id="sidebar">
+        <h1>Menu</h1>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Text 1</a></li>
+            <li><a href="#">Text 2</a></li>
+        </ul>
+    </div>
+
+    <script>
+        const menuButton = document.getElementById('menuButton');
+        const sidebar = document.getElementById('sidebar');
+
+        menuButton.addEventListener('click', function () {
+            sidebar.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

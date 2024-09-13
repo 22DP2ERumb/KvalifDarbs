@@ -1,0 +1,39 @@
+
+/* Sidebar styles */
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0; /* Aligns the sidebar to the right edge of the screen */
+    width: 250px;
+    height: 100%;
+    background-color: #333;
+    color: #fff;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.3);
+    transform: translateX(100%); /* Initially off-screen */
+    transition: transform 0.3s ease;
+}
+
+.sidebar.active {
+    transform: translateX(0); /* Moves the sidebar into view */
+}
+
+.sidebar h1 {
+    padding: 20px;
+    margin: 0;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 20px;
+    margin: 0;
+}
+
+.sidebar ul li {
+    padding: 10px 0;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
