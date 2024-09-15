@@ -66,6 +66,7 @@ body {
     display: block;
     text-align: center;
     color: white;
+    z-index: 10;
 }
 
 .sidebar button{
@@ -114,7 +115,141 @@ body {
     background-color: #1f3b61;
     color: #fff;
 }
+.login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgb(0, 0, 0);
+    margin: 50px auto;
+    height: 300px;
+}
+.login form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 30px;
+    
+}
 
+.login input{
+    width: 100%;
+    height: 30px;
+    margin-top: 10px;
+}
+
+.login button{
+    margin-top: 40px;
+    border: none;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+    transition: box-shadow 0.3s ease;
+    cursor: pointer;
+
+}
+
+.login button:hover{
+    border-radius: 3px;
+    background-color: #e0e0e0;
+    box-shadow: 0 0 0 2px rgb(0, 0, 0);
+    color: rgb(45, 45, 211);
+}
+
+.card-container{
+    margin: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0;
+}
+.car-card{
+    width: 200px;
+    height: 250px;
+    background-color: transparent;
+    margin: 10px;
+    box-shadow: 0 0 0 2px rgb(0, 0, 0);
+    position: relative;
+}
+.car-card img{
+    width: 100%;
+    height: 70%;
+}
+.car-card a{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.car-info h3{
+    margin: 0;
+    text-align: center;
+}
+.car-info ul{
+    position: absolute;
+    bottom: 0px; /* Adjust to overlap slightly */
+    right: 15px; /* Keep some spacing from the left */
+    font-weight: bold;
+    font-size: 13px; 
+}
+.car-info li{
+    list-style-type:disc;
+}
+.price{
+    position: absolute;
+    bottom: -10px;
+    left: 10px;
+    background-color: green;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+
+}
+nav{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    padding: 10px 0;
+    width: 100%;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav li {
+    overflow: hidden;
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    background-color: transparent;
+    box-shadow: 0 0 0 1px rgb(0, 0, 0);
+    border-radius: 5px;
+}
+nav li a{
+    font-weight: bold;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center; /* Centers content horizontally */
+    align-items: center;     /* Centers content vertically */
+    transition: background-color 0.3s ease;
+}
+nav li a:hover{
+    background-color: #e0e0e0;
+    color: rgb(45, 45, 211);
+}
 
 a{
     text-decoration: none;
