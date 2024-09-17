@@ -257,6 +257,29 @@ nav li a:hover{
     color: rgb(45, 45, 211);
 }
 
+.CardPage-container{
+    margin: 30px;
+    display: flex;
+}
+
+.CardPage-container img{
+    border: black solid 3px;
+    border-radius: 5px;
+    width: 750px;
+    height: 500px;
+}
+
+.cardPage-info{
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    flex-flow: row;
+}
+
+.cardPage-info h2{
+    margin: 0;
+}
+
 a{
     text-decoration: none;
     color: black;
