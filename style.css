@@ -297,9 +297,29 @@ nav li a:hover{
 
 .cardPage-info{
     display: flex;
-    justify-content: center;
     flex: 1;
-    flex-flow: row;
+    flex-flow: column;
+}
+.carPage-specifications{
+    margin-top: 80px;
+}
+
+.carPage-specifications li {
+    font-size: 15px;
+    color: #555;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+    margin-left: -70px;
+    position: relative;
+}
+
+.carPage-specifications li span {
+    font-weight: bold;
+    color: #333;
+    position: absolute;
+    left: 50%;
 }
 
 .cardPage-info h2{
@@ -319,7 +339,34 @@ nav li a:hover{
     color: black;
     font-size: 20px;
 }
+.cardPage-betting-info{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    margin: 20px;
+    
+}
+.cardPage-betting-info h2{
+    margin: 30px;
+}
+.cardPage-betting-info h2 span{
+    color: green;
+}
 
+.cardPage-betting{
+    display: flex;
+    justify-content: center;
+}
+.cardPage-betting button{
+    margin-top: -30px;
+    width: 200px;
+    height: 60px;
+    background-color: darkgreen;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    border-radius: 5px;
+}
 a{
     text-decoration: none;
     color: black;
