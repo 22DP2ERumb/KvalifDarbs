@@ -78,7 +78,7 @@ html{
     cursor: pointer;
     transition: right 0.3s ease;
 
-    background-color: transparent;
+    background-color: white;
     border-radius: 10px;
     border: none;
     transition: background-color 0.3s ease;
@@ -88,6 +88,20 @@ html{
 
 
 .sidebar button:hover{
+    background-color: #e0e0e0;
+    box-shadow: 0 0 0 2px rgb(0, 0, 0);
+    color: rgb(45, 45, 211);
+}
+
+.darkmode-button{
+    background-color: transparent;
+    border-radius: 10px;
+    border: none;
+    transition: background-color 0.3s ease;
+    transition: box-shadow 0.3s ease;
+    margin-right: 50px;
+}
+.darkmode-button:hover{
     background-color: #e0e0e0;
     box-shadow: 0 0 0 2px rgb(0, 0, 0);
     color: rgb(45, 45, 211);
@@ -176,7 +190,7 @@ html{
 .car-card{
     width: 200px;
     height: 250px;
-    background-color: transparent;
+    background-color: white;
     margin: 10px;
     border-radius: 5px;
     box-shadow: 0 0 0 2px rgb(0, 0, 0);
@@ -299,9 +313,11 @@ nav li a:hover{
     display: flex;
     flex: 1;
     flex-flow: column;
+    justify-content: center;
 }
 .carPage-specifications{
     margin-top: 80px;
+    
 }
 
 .carPage-specifications li {
@@ -344,13 +360,36 @@ nav li a:hover{
     flex-flow: row;
     justify-content: center;
     margin: 20px;
+    margin-bottom: 0px;
     
 }
-.cardPage-betting-info h2{
+.cardPage-betting-info h2 {
     margin: 30px;
+    margin-bottom: 15px;
 }
+
 .cardPage-betting-info h2 span{
     color: green;
+    
+}
+
+.cardPage-betting-info-small{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    margin-top: -15px;
+    margin-bottom: 30px;
+}
+.cardPage-betting-info-small span{
+    color: green;
+    font-weight: bold;
+}
+.cardPage-betting-info-small p{
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+    margin: 0px;
+    
 }
 
 .cardPage-betting{
@@ -358,7 +397,7 @@ nav li a:hover{
     justify-content: center;
 }
 .cardPage-betting button{
-    margin-top: -30px;
+    margin-top: 0px;
     width: 200px;
     height: 60px;
     background-color: darkgreen;
@@ -366,6 +405,7 @@ nav li a:hover{
     font-weight: bold;
     font-size: 24px;
     border-radius: 5px;
+    cursor: pointer;
 }
 a{
     text-decoration: none;
@@ -378,4 +418,22 @@ ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
+}
+
+body.dark-mode{
+    background-color: black;
+}
+
+body.dark-mode .car-card {
+    box-shadow: 0 0 0 2px darkgray;
+    background-color: gray;
+}
+body.dark-mode .sidebar button{
+    background-color: grey;
+}
+body.dark-mode .sidebar button:hover{
+    box-shadow: 0 0 0 2px white;
+}
+body.dark-mode .top-container-center form:focus-within{
+    box-shadow: 0 0 0 2px darkgrey;
 }

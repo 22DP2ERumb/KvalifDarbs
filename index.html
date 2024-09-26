@@ -36,6 +36,7 @@
         </div>
     </header>
     <div class = "sidebar" id="sidebar">
+        <button class="darkmode-button" id="darkModeButton"><span class="material-symbols-outlined">dark_mode</span></button>
         <Button class="sidebar-button" id="menuButton"><span class="material-symbols-outlined">menu</span></Button>
         <div class="sidebar-content">
             <ul>
@@ -375,14 +376,7 @@
             <li><a href="">4</a></li>
         </ul>
     </nav>
-    <script>
-        const menuButton = document.getElementById('menuButton');
-        const sidebar = document.getElementById('sidebar');
-
-        menuButton.addEventListener('click', function () {
-            sidebar.classList.toggle('active');
-        });
-    </script>
+    <script src="script.js"></script>
     
     
 </body>

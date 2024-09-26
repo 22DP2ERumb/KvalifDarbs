@@ -36,6 +36,7 @@
         </div>
     </header>
     <div class = "sidebar" id="sidebar">
+        <button class="darkmode-button" id="darkModeButton"><span class="material-symbols-outlined">dark_mode</span></button>
         <Button class="sidebar-button" id="menuButton"><span class="material-symbols-outlined">menu</span></Button>
         <div class="sidebar-content">
             <ul>
@@ -86,7 +87,11 @@
             </div>
             <div class="cardPage-betting-info">
                 <h2>Highest Bid: <span>3000$</span></h2>
-                <p>Started: <span></span></p>
+            </div>
+            <div class="cardPage-betting-info-small">
+                <p>Started: <span>3000$</span></p>
+                <p>Buy-out: <span>15000$</span></p>
+                <p>Time: <span></span></p>
             </div>
             <div class="cardPage-betting">
                 <button>Bid</button>
@@ -97,14 +102,7 @@
       </div>
     </main>
     
-    <script>
-        const menuButton = document.getElementById('menuButton');
-        const sidebar = document.getElementById('sidebar');
-
-        menuButton.addEventListener('click', function () {
-            sidebar.classList.toggle('active');
-        });
-    </script>
+    <script src="script.js"></script>
     
     
 </body>
